@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body , .container {
+  height: 100%;
+  margin: 0;
+}
+
+#root{
+  height: inherit;
+}
+
+.container { 
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 50px 1fr 50px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "tl top tr"
+    "left mainarea right"
+    "bl bottom br";
+}
+
+.mainarea { grid-area: mainarea; }
+.top { grid-area: top; }
+.bottom { grid-area: bottom; }
+.right { grid-area: right; }
+.left { grid-area: left; }
+
+.tl { grid-area: tl; }
+.tr { grid-area: tr; }
+.bl { grid-area: bl; }
+.br { grid-area: br; }
+
+/* For presentation only, no need to copy the code below */
+
+.container * {
+  border: 1px solid red;
+  position: relative;
+}
+
+.container *:after {
+  content:attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.top {
+  background-color: red;
+}
+
+.mainarea {
+  background-color: green;
+}

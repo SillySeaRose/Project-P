@@ -9,21 +9,16 @@ import Home from './Components/Home';
 function App() {
   return (
     <>
-      
-          
-          
-          
       <div className="container">
+
         <div className="mainarea">
-       
             <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="about" element={<About/>}/>  
               <Route path="charactersAndConcepts" element={<CharactersAndConcepts/>}/>    
             </Routes> 
-
-          
         </div>
+
         <div className="top"></div>
         <div className="bottom"></div>
         <div className="right"></div>
@@ -37,7 +32,7 @@ function App() {
       </div>
           
           
-          
+      
 
       
     </>
