@@ -7,8 +7,18 @@ const CharactersAndConcepts = () => {
     <>
     <nav>
       <NavLink to="/"><li className='backButtonCharactersAndConcepts'></li></NavLink>
+      <h1>Characters</h1>
+      <box>
+        <div className='arrowLeft'></div>
+        <div className='arrowRight'></div>
+      </box>
     </nav> 
-     </>
+
+    <p>Leave a comment</p>
+    <input type="text"></input>
+
+    <div ></div>
+    </>
   )
 }
 

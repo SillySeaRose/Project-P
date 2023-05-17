@@ -1,3 +1,4 @@
+/* Animação do botão de andar para a pagina inicial*/
 @keyframes backButtonAnimation{
     0%{
         background-image: url(/Sprites/BackButton/backButton-0002.png);
@@ -12,7 +13,29 @@
         background-image: url(/Sprites/BackButton/backButton-0005.png);
     }
 }
+/* Fonte a ser usada nos textos  */
+@font-face {
+    font-family: pixelFont;
+    src: url(/font-family/Mrs_Kichinto_6px.ttf);
+}
+/*barra de navegação lateral */
+::-webkit-scrollbar{
+    width: 30px;
+}
 
+::-webkit-scrollbar-track{
+    background-image: url(/Sprites/Slider/sliderv1.png);
+}
+
+::-webkit-scrollbar-thumb{
+    background-image: url(/Sprites/Slider/pointonsliderv2.png);
+    
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-image: url(/Sprites/Slider/pointonsliderv1_hover.png);
+}
+/*Elementos de css da pagina "About" */
 nav{
     /* border: 2px solid black; */
     display: flex;
@@ -40,4 +63,25 @@ nav{
     margin-right: 30px;
     font-weight: bold;
     font-size: 90px;
+}
+
+.textBox{
+    border: 2px black solid;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(49, 102, 52);
+    /* overflow: scroll; */
+    overflow-x: hidden;
+    min-height: 60vh;
+}
+.textMark{
+    color: lightblue;
+}
+.aboutText{
+    font-family: "pixelFont";
+    text-shadow:2px 2px rgb(93, 93, 141);
+    color: lightpink;
+    text-indent: 10px;
+    letter-spacing: 3px;
+    line-height: 1.6;
 }
