@@ -1,0 +1,43 @@
+@keyframes backButtonAnimation{
+    0%{
+        background-image: url(/Sprites/BackButton/backButton-0002.png);
+    }
+    35%{
+        background-image: url(/Sprites/BackButton/backButton-0003.png);
+    }
+    70%{
+        background-image: url(/Sprites/BackButton/backButton-0004.png);
+    }
+    100%{
+        background-image: url(/Sprites/BackButton/backButton-0005.png);
+    }
+}
+
+nav{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.backButtonAbout{
+    background-image: url(/Sprites/BackButton/backButton-0001.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 130px;
+    /* border: 2px rgb(192, 20, 20) solid;
+    background-color: blue; */
+}
+.backButtonAbout:hover{
+    animation: backButtonAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 0.4s;
+}
+
+.tittlePage{
+    margin: 0px;
+    margin-right: 30px;
+    font-weight: bold;
+    font-size: 90px;
+}

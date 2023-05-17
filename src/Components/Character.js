@@ -1,5 +1,5 @@
 import React from 'react'
-import './Components.css'
+import './Character.css'
 
 const Character = () => {
     let topMove = 50 

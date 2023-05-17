@@ -1,11 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './CharactersAndConcepts.css'
 
 const CharactersAndConcepts = () => {
   return (
     <>
-    <div>CharactersAndConcepts</div>
-    <NavLink className='' to="/">Home</NavLink>
+    <nav>
+      <NavLink to="/"><li className='backButtonCharactersAndConcepts'></li></NavLink>
+    </nav> 
      </>
   )
 }
