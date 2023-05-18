@@ -8,7 +8,7 @@ const Home = () => {
         <div>Home</div>
         <nav id="navegationBar"> 
             <NavLink to="/about"><li id='buttonAbout'></li></NavLink> 
-            <NavLink to="/charactersAndConcepts"><li id="buttonCharacters" ></li></NavLink>
+            <NavLink to="/charactersPage"><li id="buttonCharacters" ></li></NavLink>
             <NavLink to="/concepts"><li id="buttonConcepts" ></li> </NavLink>
         </nav>
     </>

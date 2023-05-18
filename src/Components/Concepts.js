@@ -1,11 +1,12 @@
 import React from 'react'
 import CharactersAndConcepts from './CharactersAndConcepts'
+import ConceptsTittle from './ConceptsTittle'
 
 const Concepts = () => {
   return (
     <>
-        <div>Concepts</div>
-        <CharactersAndConcepts/>
+      <ConceptsTittle/>
+      <CharactersAndConcepts/>
     </>
   )
 }
