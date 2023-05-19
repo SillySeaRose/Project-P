@@ -69,7 +69,7 @@ nav{
     border: 2px black solid;
     padding: 15px;
     margin: 15px;
-    background-color: rgb(49, 102, 52);
+    background-color: rgba(49, 102, 52, 2);
     /* overflow: scroll; */
     overflow-x: hidden;
     min-height: 60vh;

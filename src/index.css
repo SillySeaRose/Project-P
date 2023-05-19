@@ -44,22 +44,42 @@ html, body , .container {
 .bl { grid-area: bl; }
 .br { grid-area: br; }
 
+.tl{
+  background-image: url(/Sprites/websiteFrame/v3/tl.png);
+}
+
+.tr{
+  background-image: url(/Sprites/websiteFrame/v3/tr.png);
+} 
+.bl{
+  background-image: url(/Sprites/websiteFrame/v3/bl.png);
+}
+.br{
+  background-image: url(/Sprites/websiteFrame/v3/br.png);
+}
+
 .top {
   background-color: red;
+  background-image: url(/Sprites/websiteFrame/v3/frametop.png);
+  background-repeat: repeat-x;
+  
 }
 
 .mainarea {
-  background-color: green;
+  background-color: rgb(32, 32, 116)
 }
 
 .bottom{
  background-color: blue;
+ background-image: url(/Sprites/websiteFrame/v3/framebottom.png);
 }
 
 .right{
   background-color: lightcoral;
+  background-image: url(/Sprites/websiteFrame/v3/frameright.png);
 }
 
 .left{
   background-color: yellow;
+  background-image: url(/Sprites/websiteFrame/v3/frameleft.png);
 }

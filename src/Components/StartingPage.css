@@ -1,0 +1,39 @@
+/* Fonte a ser usada nos textos  */
+@font-face {
+    font-family: pixelFont;
+    src: url(/font-family/Mrs_Kichinto_6px.ttf);
+}
+
+.startWebSite{
+    color: rgb(255, 183, 0);
+    font-family: "pixelFont";
+    text-shadow: 4px 4px rgb(230, 239, 65), 8px 8px rgb(239, 234, 188);
+    letter-spacing: 1px;
+    font-size: 400%;
+    position: absolute;
+    top: 79%;
+    left: 44%;
+}
+
+.startWebSite:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px rgb(171, 176, 70);
+}
+
+.StartingPageBackground{
+    border: 2px solid rgb(53, 17, 163);
+    height: 99%;
+    background-image: url(/Sprites/BackGroundImages/websitebackgroundframe2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#portefolioTitle{
+    color: rgb(203, 46, 46);
+    font-family: "pixelFont";
+    text-shadow: 4px 4px rgb(218, 123, 35), 8px 8px rgb(222, 206, 64);
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-align: center;
+    font-size: 90px;
+}

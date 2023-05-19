@@ -16,7 +16,7 @@ const CharactersAndConcepts = () => {
   //     image: "Characters/2.png"
   //   }
   // ]
-  //Leitor das imagens
+  // // Leitor das imagens
   // const showImages = imagesForTheCharacters.map((imageShowing) => {
   //   <div key={imageShowing.alt}>
   //     <img src={imageShowing.image} alt={imageShowing.alt}></img>
@@ -27,7 +27,7 @@ const CharactersAndConcepts = () => {
   return (
     <>
     <nav>
-      <NavLink to="/"><li className='backButtonCharactersAndConcepts'></li></NavLink>
+      <NavLink to="/home"><li className='backButtonCharactersAndConcepts'></li></NavLink>
       {/* Menu para mover as imagens ou aumentar */}
       <box className="imageMenu">
         <div className='arrowRight'></div>

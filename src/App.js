@@ -5,6 +5,7 @@ import About from './Components/About';
 import CharactersPage from './Components/CharactersPage';
 import Home from './Components/Home';
 import Concepts from './Components/Concepts';
+import StartingPage from './Components/StartingPage';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
         {/* Área onde se encontra as rotas para os vários links - grid  = 5*/}
         <div className="mainarea">
             <Routes>
-              <Route path="/" element={<Home/>}/>
+              <Route path='/' element={<StartingPage/>}/>
+              <Route path="home" element={<Home/>}/>
               <Route path="about" element={<About/>}/>  
               <Route path="charactersPage" element={<CharactersPage/>}/>   
               <Route path='concepts' element={<Concepts/>}/> 

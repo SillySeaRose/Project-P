@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
     <nav>
-      <NavLink to="/"><li className='backButtonAbout'></li></NavLink>
+      <NavLink to="/home"><li className='backButtonAbout'></li></NavLink>
       <h1 className='tittlePage'>About</h1>
     </nav> 
     
