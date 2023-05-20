@@ -1,16 +1,16 @@
 /* Animação do botão de andar para a pagina inicial*/
 @keyframes backButtonAnimation{
     0%{
-        background-image: url(/Sprites/BackButton/backButton-0002.png);
+        background-image: url(/src/Components/Sprites/BackButton/backButton-0002.png);
     }
     35%{
-        background-image: url(/Sprites/BackButton/backButton-0003.png);
+        background-image: url(/src/Components/Sprites/BackButton/backButton-0003.png);
     }
     70%{
-        background-image: url(/Sprites/BackButton/backButton-0004.png);
+        background-image: url(/src/Components/Sprites/BackButton/backButton-0004.png);
     }
     100%{
-        background-image: url(/Sprites/BackButton/backButton-0005.png);
+        background-image: url(/src/Components/Sprites/BackButton/backButton-0005.png);
     }
 }
 /* Fonte a ser usada nos textos  */
@@ -24,16 +24,16 @@
 }
 
 ::-webkit-scrollbar-track{
-    background-image: url(/Sprites/Slider/sliderv1.png);
+    background-image: url(/src/Components/Sprites/Slider/sliderv1.png);
 }
 
 ::-webkit-scrollbar-thumb{
-    background-image: url(/Sprites/Slider/pointonsliderv2.png);
+    background-image: url(/src/Components/Sprites/Slider/pointonsliderv2.png);
     
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-image: url(/Sprites/Slider/pointonsliderv1_hover.png);
+    background-image: url(/src/Components/Sprites/Slider/pointonsliderv1_hover.png);
 }
 /*Elementos de css da pagina "About" */
 nav{
@@ -43,7 +43,7 @@ nav{
 }
 
 .backButtonAbout{
-    background-image: url(/Sprites/BackButton/backButton-0001.png);
+    background-image: url(/src/Components/Sprites/BackButton/backButton-0001.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

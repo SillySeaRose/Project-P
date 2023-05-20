@@ -1,34 +1,97 @@
+/* Fonte a ser usada nos textos  */
+@font-face {
+    font-family: pixelFont;
+    src: url(/font-family/Mrs_Kichinto_6px.ttf);
+}
+
+.background{
+    
+    width: 2000px;
+    height: 2000px;
+    animation: backgroundAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-direction: alternate;
+    transition: all ease 40s;
+    background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: -50%;
+    left: -20%;
+}
+
+.menuImage{
+    /* border: 2px red solid; */
+    width: 92%;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 4%;
+    z-index: 0;
+}
+
 #navegationBar{
     /* border: 2px black solid; */
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 li{
     list-style-type: none;
-    width: 275px;
-    height: 100px;
+    margin-top: 60px;
+    /* width: 275px;
+    height: 100px; */
 }
 
 .selectBox{
     border: 2px red solid;
 }
 
+.menuLink{
+    text-decoration: none;
+}
+
+/* Zona dos botõesdo menu*/
 #buttonAbout{
-    background-image: url(/Sprites/button/possiblebutton4.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    color: rgb(255, 238, 0);
+    font-family: "pixelFont";
+    text-shadow: 0px -4px rgb(182, 189, 48), 0px -8px rgb(82, 78, 41);
+    text-decoration: none;
+    font-size: 65px;
+    transition: all ease 0.5s;
+}
+#buttonAbout:hover{
+    color: rgb(228, 63, 63);
+    text-shadow: 0px 4px rgb(212, 169, 101), 0px 8px rgb(226, 205, 17);
 }
 
 #buttonCharacters{
-    background-image: url(/Sprites/button/possiblebutton4.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    color: rgb(255, 238, 0);
+    font-family: "pixelFont";
+    text-shadow: 0px -4px rgb(182, 189, 48), 0px -8px rgb(82, 78, 41);
+    text-decoration: none;
+    font-size: 65px;
+    transition: all ease 0.5s;
+}
+
+#buttonCharacters:hover{
+    color: rgb(228, 63, 63);
+    text-shadow: 0px 4px rgb(212, 169, 101), 0px 8px rgb(226, 205, 17);
 }
 
 #buttonConcepts{
-    background-image: url(/Sprites/button/possiblebutton4.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    color: rgb(255, 238, 0);
+    font-family: "pixelFont";
+    text-shadow: 0px -4px rgb(182, 189, 48), 0px -8px rgb(82, 78, 41);
+    text-decoration: none;
+    font-size: 65px;
+    transition: all ease 0.5s;
+}
+
+#buttonConcepts:hover{
+    color: rgb(228, 63, 63);
+    text-shadow: 0px 4px rgb(212, 169, 101), 0px 8px rgb(226, 205, 17);
 }

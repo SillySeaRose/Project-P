@@ -1,15 +1,15 @@
 @keyframes backButtonAnimation{
     0%{
-        background-image: url(/Sprites/BackButton/backButton-0002.png);
+        background-image: url(/src/Components/Sprites/BackButton/backButton-0002.png);
     }
     35%{
-        background-image: url(/Sprites/BackButton/backButton-0003.png);
+        background-image: url(/src/Components/Sprites/BackButton/backButton-0003.png);
     }
     70%{
-        background-image: url(/Sprites/BackButton/backButton-0004.png);
+        background-image: url(/src/Components/Sprites/BackButton/backButton-0004.png);
     }
     100%{
-        background-image: url(/Sprites/BackButton/backButton-0005.png);
+        background-image: url(/src/Components/Sprites/BackButton/backButton-0005.png);
     }
 }
 
@@ -37,7 +37,7 @@ nav{
 }
 
 .backButtonCharactersAndConcepts{
-    background-image: url(/Sprites/BackButton/backButton-0001.png);
+    background-image: url(/src/Components/Sprites/BackButton/backButton-0001.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -61,7 +61,7 @@ nav{
 }
 
 .arrowLeft{
-    background-image: url(/Sprites/ImageSwapKeys/back.png);
+    background-image: url(/src/Components/Sprites/ImageSwapKeys/back.png);
     width: 124px;
     height: 100px;
 }
@@ -73,7 +73,7 @@ nav{
 }
 
 .arrowRight{
-    background-image: url(/Sprites/ImageSwapKeys/front.png);
+    background-image: url(/src/Components/Sprites/ImageSwapKeys/front.png);
     width: 124px;
     height: 100px;
 }

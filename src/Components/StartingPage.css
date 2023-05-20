@@ -1,31 +1,72 @@
+@keyframes backgroundAnimation {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 /* Fonte a ser usada nos textos  */
 @font-face {
     font-family: pixelFont;
     src: url(/font-family/Mrs_Kichinto_6px.ttf);
 }
 
+.background{
+    /* border: 2px red solid; */
+    width: 2000px;
+    height: 2000px;
+    animation: backgroundAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-direction: alternate;
+    transition: all ease 40s;
+    background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
+    background-repeat: repeat;
+    /* background-size: auto; */
+    /* background-clip: border-box; */
+    position: absolute;
+    top: -50%;
+    left: -20%;
+}
+
+
+.CharacterHoldingStart{
+    /* border: 2px solid green; */
+    /* width: 1250px;
+    height: 600px; */
+    width: 92%;
+    height: 88%;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
+
 .startWebSite{
     color: rgb(255, 183, 0);
     font-family: "pixelFont";
-    text-shadow: 4px 4px rgb(230, 239, 65), 8px 8px rgb(239, 234, 188);
+    text-shadow: 0px 4px rgb(230, 239, 65), 0px 8px rgb(239, 234, 188);
     letter-spacing: 1px;
     font-size: 400%;
     position: absolute;
     top: 79%;
-    left: 44%;
+    left: 44.5%;
 }
 
 .startWebSite:hover{
     color: rgb(255, 255, 255);
-    text-shadow: 4px 4px rgb(171, 176, 70);
+    text-shadow: 0px 4px rgb(171, 176, 70);
 }
 
 .StartingPageBackground{
     border: 2px solid rgb(53, 17, 163);
     height: 99%;
-    background-image: url(/Sprites/BackGroundImages/websitebackgroundframe2.png);
+    /* background-image: url(/src/Components/Sprites/BackGroundImages/backgroundmoving.png); */
     background-repeat: no-repeat;
     background-size: cover;
+    
+    
 }
 
 #portefolioTitle{

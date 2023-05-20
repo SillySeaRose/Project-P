@@ -15,6 +15,7 @@ code {
 html, body , .container {
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 #root{
@@ -45,22 +46,22 @@ html, body , .container {
 .br { grid-area: br; }
 
 .tl{
-  background-image: url(/Sprites/websiteFrame/v3/tl.png);
+  background-image: url(/src/Components/Sprites/websiteFrame/v3/tl.png);
 }
 
 .tr{
-  background-image: url(/Sprites/websiteFrame/v3/tr.png);
+  background-image: url(/src/Components/Sprites/websiteFrame/v3/tr.png);
 } 
 .bl{
-  background-image: url(/Sprites/websiteFrame/v3/bl.png);
+  background-image: url(/src/Components/Sprites/websiteFrame/v3/bl.png);
 }
 .br{
-  background-image: url(/Sprites/websiteFrame/v3/br.png);
+  background-image: url(/src/Components/Sprites/websiteFrame/v3/br.png);
 }
 
 .top {
   background-color: red;
-  background-image: url(/Sprites/websiteFrame/v3/frametop.png);
+  background-image: url(/src/Components/Sprites/websiteFrame/v3/frametop.png);
   background-repeat: repeat-x;
   
 }
@@ -71,15 +72,15 @@ html, body , .container {
 
 .bottom{
  background-color: blue;
- background-image: url(/Sprites/websiteFrame/v3/framebottom.png);
+ background-image: url(/src/Components/Sprites/websiteFrame/v3/framebottom.png);
 }
 
 .right{
   background-color: lightcoral;
-  background-image: url(/Sprites/websiteFrame/v3/frameright.png);
+  background-image: url(/src/Components/Sprites/websiteFrame/v3/frameright.png);
 }
 
 .left{
   background-color: yellow;
-  background-image: url(/Sprites/websiteFrame/v3/frameleft.png);
+  background-image: url(/src/Components/Sprites/websiteFrame/v3/frameleft.png);
 }
