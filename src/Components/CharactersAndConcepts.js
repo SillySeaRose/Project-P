@@ -26,21 +26,13 @@ const CharactersAndConcepts = () => {
 
   return (
     <>
-    <nav>
-      <NavLink to="/home"><li className='backButtonCharactersAndConcepts'></li></NavLink>
-      {/* Menu para mover as imagens ou aumentar */}
-      <box className="imageMenu">
-        <div className='arrowRight'></div>
-        <div className='fullSizeImage'></div>
-        <div className='arrowLeft'></div>
-      </box>
-    </nav> 
     
+      <NavLink to="/home"><div className='backButtonCharactersAndConcepts'></div></NavLink>
 
-    <label className='opinionBoxTitte'>Leave a comment</label>
-    <input className='opinionBox' type="text"></input>
-
-    <div className='imageCarousel'></div>
+      {/* Menu para mover as imagens */}
+        <div className='arrowRight'></div>
+        <div className='arrowLeft'></div>
+        <div className='imageCarousel'></div>
     </>
   )
 }
