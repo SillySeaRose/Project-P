@@ -1,3 +1,70 @@
+/* Overlay Section*/
+@keyframes welcomeOverlayAnimation{
+    0%{
+        background-color: rgb(0, 0, 0);
+    }
+    25%{
+        background-color: rgb(0, 0, 0);
+    }
+    50%{
+        background-color: rgb(0, 0, 0);
+    }
+    99%{
+        background-color: rgba(0, 0, 0, 0);
+        display: none;
+    }
+    100%{
+    
+    }
+}
+
+@keyframes welcomeTextAnimation{
+    0%{
+        opacity: 0%;
+        top: 0%;
+    }
+    50%{
+        opacity: 100%;
+        top: 15%;
+    }
+    80%{
+        opacity: 0%;
+        display: none;
+    }
+}
+
+.welcomeOverlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 2;
+    animation:welcomeOverlayAnimation;
+    animation-duration: 5s;
+    
+}
+
+.welcomeText{
+    opacity: 0%;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    font-family: pixelFont;
+    font-size: 200px;
+    color: darkorange;
+    text-shadow: 0px 4px rgb(224, 192, 33), 0px -8px rgb(218, 123, 35);
+    animation: welcomeTextAnimation;
+    animation-duration: 5s;
+    
+}
+
+
+/* Website Section*/
+
 @keyframes backgroundAnimation {
     0%{
         transform: rotate(0deg)
@@ -7,12 +74,13 @@
     }
 }
 
-/* Fonte a ser usada nos textos  */
+/* Font to be used on any text used on website  */
 @font-face {
     font-family: pixelFont;
     src: url(/font-family/Mrs_Kichinto_6px.ttf);
 }
 
+/* Place where will be the background and looping animation of the brackground */
 .background{
     /* border: 2px red solid; */
     width: 2000px;
@@ -31,7 +99,7 @@
     left: -20%;
 }
 
-
+/* Image of the red character */
 .CharacterHoldingStart{
     /* border: 2px solid green; */
     /* width: 1250px;
@@ -43,7 +111,22 @@
     left: 4%;
 }
 
+/* Word "Start" on the first webpage */
+@keyframes solutionAnimation {
+    0%{
+        opacity: 0%;
+    }
+    30%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 100%;
+    }
+}
 .startWebSite{
+    animation: solutionAnimation;
+    animation-duration: 10s;
+    opacity: 100%;
     color: rgb(255, 183, 0);
     font-family: "pixelFont";
     text-shadow: 0px 4px rgb(230, 239, 65), 0px 8px rgb(239, 234, 188);
@@ -52,6 +135,7 @@
     position: absolute;
     top: 79%;
     left: 44.5%;
+    z-index: 2;
 }
 
 .startWebSite:hover{
@@ -59,16 +143,15 @@
     text-shadow: 0px 4px rgb(171, 176, 70);
 }
 
-.StartingPageBackground{
+/* Background Color*/
+/* .StartingPageBackground{
     border: 2px solid rgb(53, 17, 163);
     height: 99%;
-    /* background-image: url(/src/Components/Sprites/BackGroundImages/backgroundmoving.png); */
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
-}
+} */
 
+/* Website Title */
 #portefolioTitle{
     color: rgb(203, 46, 46);
     font-family: "pixelFont";

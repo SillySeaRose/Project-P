@@ -7,11 +7,17 @@ import image from "./Sprites/BackGroundImages/characterHoldingStartButtonAndStar
 const StartingPage = () => {
   return (
     <>
+    {/* Animation of a Welcoming Overlay */}
+    <div className='welcomeOverlay'>
+        <p className='welcomeText'>Welcome</p>
+    </div>
+
+    {/* Box where all the content will be */}
     <div className='StartingPageBackground'>
-    <div className='background'></div>
-    <h1 id='portefolioTitle'> SillySeaRose Portfolio </h1>
-    <img src={image} alt="CharacterImage" className='CharacterHoldingStart'></img>
-    <NavLink to="/home"><div className='startWebSite'>Start</div></NavLink>
+      <div className='background'></div>
+      <h1 id='portefolioTitle'> SillySeaRose Portfolio </h1>
+      <img src={image} alt="CharacterImage" className='CharacterHoldingStart'></img>
+      <NavLink to="/home"><div className='startWebSite'>Start</div></NavLink>
     </div>
     </>
   )
