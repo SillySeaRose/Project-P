@@ -106,8 +106,6 @@ text-decoration: none;
 
 /* Place where will be the background and looping animation of the brackground */
 .background{
-    width: 2000px;
-    height: 2000px;
     animation: backgroundAnimation;
     animation-iteration-count: infinite;
     animation-duration: 60s;
@@ -115,6 +113,8 @@ text-decoration: none;
     transition: all ease 40s;
     background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
     background-repeat: repeat;
+    background-repeat:repeat-x;
+    background-repeat: repeat-y;
     position: absolute;
     top: -50%;
     left: -20%;

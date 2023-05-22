@@ -47,23 +47,28 @@ html, body , .container {
 
 .tl{
   background-image: url(/src/Components/Sprites/websiteFrame/v3/tl.png);
+  z-index: 3;
 }
 
 .tr{
   background-image: url(/src/Components/Sprites/websiteFrame/v3/tr.png);
+  z-index: 3;
 } 
+
 .bl{
   background-image: url(/src/Components/Sprites/websiteFrame/v3/bl.png);
+  z-index: 3;
 }
 .br{
   background-image: url(/src/Components/Sprites/websiteFrame/v3/br.png);
+  z-index: 3;
 }
 
 .top {
   background-color: red;
   background-image: url(/src/Components/Sprites/websiteFrame/v3/frametop.png);
   background-repeat: repeat-x;
-  
+  z-index: 3;
 }
 
 .mainarea {
@@ -73,14 +78,17 @@ html, body , .container {
 .bottom{
  background-color: blue;
  background-image: url(/src/Components/Sprites/websiteFrame/v3/framebottom.png);
+ z-index: 3;
 }
 
 .right{
   background-color: lightcoral;
   background-image: url(/src/Components/Sprites/websiteFrame/v3/frameright.png);
+  z-index: 3;
 }
 
 .left{
   background-color: yellow;
   background-image: url(/src/Components/Sprites/websiteFrame/v3/frameleft.png);
+  z-index: 3;
 }
