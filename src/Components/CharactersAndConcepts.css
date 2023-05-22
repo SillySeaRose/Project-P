@@ -1,15 +1,50 @@
-@keyframes backButtonAnimation{
+/* Animations for the Character and Concepts page */
+
+@keyframes arrowLeftAnimation{
     0%{
-        background-image: url(/src/Components/Sprites/BackButton/backButton-0002.png);
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftt1.png);        
     }
-    35%{
-        background-image: url(/src/Components/Sprites/BackButton/backButton-0003.png);
+    14%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftt2.png);
+    }
+    28%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftt3.png);
+    }
+    42%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftt4.png);
+    }
+    56%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftt5.png);
     }
     70%{
-        background-image: url(/src/Components/Sprites/BackButton/backButton-0004.png);
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftt6.png);
     }
-    100%{
-        background-image: url(/src/Components/Sprites/BackButton/backButton-0005.png);
+    84%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftt7.png);
+    }
+}
+
+@keyframes arrowRightAnimation{
+    0%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowRight1.png);        
+    }
+    14%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowRight2.png);
+    }
+    28%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowRight3.png);
+    }
+    42%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowRight4.png);
+    }
+    56%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowRight5.png);
+    }
+    70%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowRight6.png);
+    }
+    84%{
+        background-image: url(./Sprites/BackGroundImages/ConceptCharacterPage/ArrowRight7.png);
     }
 }
 
@@ -30,63 +65,111 @@
     left: 42%;
 }
 
-nav{
-    /* border: 2px solid black; */
-    display: flex;
-    justify-content: space-between;
+.NavLinkDecoration{
+text-decoration: none;
 }
 
 .backButtonCharactersAndConcepts{
-    background-image: url(/src/Components/Sprites/BackButton/backButton-0001.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 200px;
-    height: 130px;
+    width: max-content;
+    font-size: 50px;
+    font-family: pixelFont;
+    color: rgb(216, 216, 42);
+    text-shadow: 0px 2px rgb(200, 164, 63), 0px 4px rgb(127, 103, 37);
+    position: relative;
+    top: 5%;
+    left: 2%;
+    z-index: 2;
+    transition: all ease 0.5s;
 }
 
 .backButtonCharactersAndConcepts:hover{
-    animation: backButtonAnimation;
-    animation-iteration-count: infinite;
-    animation-duration: 0.4s;
+    color: rgb(223, 111, 111);
+    text-shadow: 0px 0px rgb(216, 184, 94), 0px 2px rgb(147, 127, 73);
 }
 
-.imageMenu{
-    /* border: 2px red solid; */
-    padding: 10px;
-    margin-right: 50px;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
+.handsImage{
+    width: 100%;
+    height: 93.2%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.LightFrame{
+    width: 40%;
+    height: 75.1%;
+    position: absolute;
+    top: 8%;
+    left: 30%;
+    z-index: 2;
+}
+
+/* Place where will be the background and looping animation of the brackground */
+.background{
+    width: 2000px;
+    height: 2000px;
+    animation: backgroundAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-direction: alternate;
+    transition: all ease 40s;
+    background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: -50%;
+    left: -20%;
+    
 }
 
 .arrowLeft{
     /* border: 2px red solid; */
-    background-image: url(/src/Components/Sprites/ImageSwapKeys/front.png);
-    width: 124px;
-    height: 100px;
+    background-image: url(/src/Components/Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftt1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 12%;
     position: absolute;
-    top: 45%;
-    left: 19%;
+    top: 40%;
+    left: 8%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.arrowLeft:hover{
+    animation: arrowLeftAnimation;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
 }
 
 .arrowRight{
-    background-image: url(/src/Components/Sprites/ImageSwapKeys/back.png);
-    width: 124px;
-    height: 100px;
+    background-image: url(/src/Components/Sprites/BackGroundImages/ConceptCharacterPage/ArrowRight1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20%;
+    height: 12%;
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 70%;
+    z-index: 2;
+    cursor: pointer;
 }
 
+.arrowRight:hover{
+    animation: arrowRightAnimation;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+}
+
+
 .imageCarousel{
-    border: 2px black solid;
-    width: 580px;
-    height: 580px;
+    /* border: 2px black solid; */
+    width: 40%;
+    height: 75%;
     background-image: url(/Characters/1.png);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: 10%;
-    left: 29%;
+    top: 8%;
+    left: 30%;
+    box-shadow: 10px 10px rgba(235, 198, 31, 0.759), -10px -10px rgba(235, 198, 31, 0.759), 5px 5px rgba(250, 223, 102, 0.759), -5px -5px rgba(250, 223, 102, 0.759);
 }

@@ -4,8 +4,8 @@
     src: url(/font-family/Mrs_Kichinto_6px.ttf);
 }
 
-.background{
-    
+/* Place where will be the background and looping animation of the brackground */
+.background{ 
     width: 2000px;
     height: 2000px;
     animation: backgroundAnimation;
@@ -19,7 +19,7 @@
     top: -50%;
     left: -20%;
 }
-
+/* Image with the red character.The big eye shooting light*/
 .menuImage{
     /* border: 2px red solid; */
     width: 92%;
@@ -30,6 +30,7 @@
     z-index: 0;
 }
 
+/* Place where the menu is positioned */
 #navegationBar{
     /* border: 2px black solid; */
     display: flex;
@@ -39,22 +40,18 @@
     z-index: 1;
 }
 
+/* Space between words */
 li{
     list-style-type: none;
     margin-top: 60px;
-    /* width: 275px;
-    height: 100px; */
 }
 
-.selectBox{
-    border: 2px red solid;
-}
-
+/* Removing the underline from the links */
 .menuLink{
     text-decoration: none;
 }
 
-/* Zona dos botõesdo menu*/
+/* Place where buttons are customized and the corresponded hover's */
 #buttonAbout{
     color: rgb(255, 238, 0);
     font-family: "pixelFont";

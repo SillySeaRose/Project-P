@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <>
         <div className='background'></div>
+        {/* Menu */}
         <nav id="navegationBar"> 
             <NavLink className="menuLink" to="/about"><li id='buttonAbout'>About</li></NavLink> 
             <NavLink className="menuLink" to="/charactersPage"><li id="buttonCharacters" >Characters</li></NavLink>
