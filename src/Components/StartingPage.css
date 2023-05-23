@@ -64,46 +64,46 @@
 
 /* Website Section*/
 
-@keyframes backgroundAnimation {
-    0%{
-        transform: rotate(0deg)
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
 /* Font to be used on any text used on website  */
 @font-face {
     font-family: pixelFont;
     src: url(/font-family/Mrs_Kichinto_6px.ttf);
 }
 
+@keyframes backgroundAnimation {
+    0%{
+        rotate: 90deg;
+        /* rotate: 0deg;*/
+        /* transform: rotate(0deg); */
+        /* top: 0%; */
+    }
+    100%{
+        rotate: 360deg;
+        /* transform: rotate(360deg); */
+        /* top: 50%; */
+    }
+}
+
 /* Place where will be the background and looping animation of the brackground */
 .background{
-    /* border: 2px red solid; */
-    /* width: 100%;
-    height: 100%; */
-    animation: backgroundAnimation;
-    animation-iteration-count: infinite;
-    animation-duration: 60s;
-    animation-direction: alternate;
-    transition: all ease 40s;
     background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
-    background-repeat:repeat-x;
-    background-repeat: repeat-y;
-    /* background-size: auto; */
-    /* background-clip: border-box; */
+    /* border: 2px red solid; */
+    width: 100%;
+    height: 200%;
+    rotate: 0deg;
     position: absolute;
     top: -50%;
-    left: -20%;
+    left: 0%;
+    animation: backgroundAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all ease-in 3s;
 }
 
 /* Image of the red character */
 .CharacterHoldingStart{
     /* border: 2px solid green; */
-    /* width: 1250px;
-    height: 600px; */
     width: 92%;
     height: 88%;
     position: absolute;
@@ -127,20 +127,21 @@
     animation: solutionAnimation;
     animation-duration: 10s;
     opacity: 100%;
-    color: rgb(255, 183, 0);
+    color: rgb(255, 255, 255);
     font-family: "pixelFont";
     text-shadow: 0px 4px rgb(230, 239, 65), 0px 8px rgb(239, 234, 188);
     letter-spacing: 1px;
     font-size: 400%;
     position: absolute;
     top: 79%;
-    left: 44.5%;
+    left: 43%;
     z-index: 2;
+    transition: all ease 0.5s;
 }
 
 .startWebSite:hover{
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 4px rgb(171, 176, 70);
+    color: rgb(242, 64, 64);
+    text-shadow: 0px 4px rgb(208, 212, 128);
 }
 
 /* Website Title */
@@ -151,5 +152,5 @@
     letter-spacing: 3px;
     word-spacing: 5px;
     text-align: center;
-    font-size: 90px;
+    font-size: 7vw;
 }

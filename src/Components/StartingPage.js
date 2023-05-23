@@ -17,7 +17,7 @@ const StartingPage = () => {
       <div className='background'></div>
       <h1 id='portefolioTitle'> SillySeaRose Portfolio </h1>
       <img src={image} alt="CharacterImage" className='CharacterHoldingStart'></img>
-      <NavLink to="/home"><div className='startWebSite'>Start</div></NavLink>
+      <NavLink to="/home"><div className='startWebSite'>START</div></NavLink>
     </div>
     </>
   )

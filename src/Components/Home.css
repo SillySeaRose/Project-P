@@ -4,21 +4,32 @@
     src: url(/font-family/Mrs_Kichinto_6px.ttf);
 }
 
+@keyframes backgroundAnimation {
+    0%{
+        rotate: 90deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
 /* Place where will be the background and looping animation of the brackground */
-.background{ 
-    animation: backgroundAnimation;
-    animation-iteration-count: infinite;
-    animation-duration: 60s;
-    animation-direction: alternate;
-    transition: all ease 40s;
+.background{
     background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
-    background-repeat: repeat;
-    background-repeat:repeat-x;
-    background-repeat: repeat-y;
+    /* border: 2px red solid; */
+    width: 100%;
+    height: 200%;
+    rotate: 0deg;
     position: absolute;
     top: -50%;
-    left: -20%;
+    left: 0%;
+    animation: backgroundAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all ease-in 3s;
 }
+
 /* Image with the red character.The big eye shooting light*/
 .menuImage{
     /* border: 2px red solid; */
