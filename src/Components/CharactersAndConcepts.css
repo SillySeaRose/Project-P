@@ -137,55 +137,42 @@ text-decoration: none;
     transition: all ease-in 3s;
 }
 
-.arrowLeft{
-    /* border: 2px red solid; */
-    background-image: url(/src/Components/Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftt1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 20%;
-    height: 12%;
-    position: absolute;
-    top: 40%;
-    left: 8%;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.arrowLeft:hover{
+/* .arrowLeft:hover{
     animation: arrowLeftAnimation;
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
-}
+} */
 
-.arrowRight{
-    background-image: url(/src/Components/Sprites/BackGroundImages/ConceptCharacterPage/ArrowRight1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 20%;
-    height: 12%;
-    position: absolute;
-    top: 40%;
-    left: 70%;
-    z-index: 2;
-    cursor: pointer;
-}
 
-.arrowRight:hover{
+/* .arrowRight:hover{
     animation: arrowRightAnimation;
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
+} */
+
+.picturesContainer{
+    width: 40%;
+    height: 75%;
+    /* position: absolute;
+    left: 30%;
+    top: 10%; */
+    position: absolute;
+    top: 13%;
+    left: 30.1%;
+    z-index: 3;
+    box-shadow: 9px 9px rgba(235, 198, 31, 0.759), -9px -9px rgba(235, 198, 31, 0.759), 5px 5px rgba(250, 223, 102, 0.759), -5px -5px rgba(250, 223, 102, 0.759);
 }
 
 
-.imageCarousel{
-    /* border: 2px black solid; */
+/* .imageCarousel{
+    border: 2px rgb(234, 11, 11) solid;
     width: 40%;
     height: 75%;
-    background-image: url(/Characters/1.1.png);
+
     background-size:cover;
     background-repeat: no-repeat;
     position: absolute;
     top: 13%;
     left: 30.1%;
     box-shadow: 9px 9px rgba(235, 198, 31, 0.759), -9px -9px rgba(235, 198, 31, 0.759), 5px 5px rgba(250, 223, 102, 0.759), -5px -5px rgba(250, 223, 102, 0.759);
-}
+} */

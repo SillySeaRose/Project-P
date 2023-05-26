@@ -5,6 +5,12 @@ import image from "./Sprites/BackGroundImages/characterHoldingStartButtonAndStar
 // import backgroundMoving from "./Sprites/BackGroundImages/starsbackgroundmoving.png"
 
 const StartingPage = () => {
+  //Transition from this page to others
+  function fadeOutPage() {
+    // let page = document.querySelector(".StartingPageBackground");
+    // page.style.opacity = "0%";
+  }
+  
   return (
     <>
     {/* Animation of a Welcoming Overlay */}
@@ -13,11 +19,11 @@ const StartingPage = () => {
     </div>
 
     {/* Box where all the content will be */}
+    <div className='background'></div>
     <div className='StartingPageBackground'>
-      <div className='background'></div>
       <h1 id='portefolioTitle'> SillySeaRose Portfolio </h1>
       <img src={image} alt="CharacterImage" className='CharacterHoldingStart'></img>
-      <NavLink to="/home"><div className='startWebSite'>START</div></NavLink>
+      <NavLink to="/home"><div className='startWebSite' onClick={fadeOutPage()}>START</div></NavLink>
     </div>
     </>
   )
