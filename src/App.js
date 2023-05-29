@@ -4,7 +4,7 @@ import { Route, Routes} from 'react-router-dom'
 import About from './Components/About';
 import CharactersPage from './Components/CharactersPage';
 import Home from './Components/Home';
-import Concepts from './Components/Concepts';
+import Concepts from './Components/ConceptsPage';
 import StartingPage from './Components/StartingPage';
 
 

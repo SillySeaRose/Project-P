@@ -1,5 +1,6 @@
 import React from 'react'
 import "./CharacterSlides.css"
+// import CharactersAndConcepts from './CharactersAndConcepts';
 //We take give a prop called "slides" wich is going to read the array of objects "slides"
 const CharacterSlides = ({slides}) => {
     //Here we will check in wich slide we are in, updating it with the useState Hook  
@@ -9,8 +10,10 @@ const CharacterSlides = ({slides}) => {
         width: "100%",
         height: "100%",
         backgroundPosition: "center",
-        backgroundSize: "cover",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
         backgroundImage: `url(${slides[currentIndex].url})`,
+        transition: "all ease 0.3s",
         zIndex: "3",
     }
 
@@ -19,8 +22,8 @@ const CharacterSlides = ({slides}) => {
         //Check the last position of the Id
         const isLastPicture = currentIndex === slides.lenght -1;
         //
-        const newId = isLastPicture ? 0 : currentIndex + 1;
-        setCurrentIndex(newId);
+        const newIndex = isLastPicture ? 0 : currentIndex + 1;
+        setCurrentIndex(newIndex);
     }
 
     // To go back in the slider
@@ -28,9 +31,9 @@ const CharacterSlides = ({slides}) => {
         //this will check the first position of the Id
         const isFirstPicture = currentIndex === 0;
         //this will change the position of the index, checking if the lenght of the current is less then the minimun possible and return to the last one. Or simply going back, removing one from the currentIndex
-        const newId = isFirstPicture ? slides.lengh -1 : currentIndex - 1;
+        const newIndex = isFirstPicture ? slides.lengh -1 : currentIndex - 1;
         // here we set the New Id we got in the useState
-        setCurrentIndex(newId);
+        setCurrentIndex(newIndex);
     }
 
     return (
@@ -38,8 +41,7 @@ const CharacterSlides = ({slides}) => {
             <div className='boxHeight'>
                 <div className='arrowRight' onClick={nextPicture}></div>
                 <div className='arrowLeft' onClick={backPicture}></div>
-                <div style={characterSlidesStyle}></div>
-                
+                <div style={characterSlidesStyle}></div>   
             </div>
         </>
     )
@@ -65,55 +67,3 @@ export default CharacterSlides
       - With this it should work.
   */ 
 
-  // For the carousel / Array of objects
- 
-//   const sliders = [
-//     {
-//       id: 1,
-//       imageSource: require ("./Characters/2.png")
-//     },
-//     {
-//       id: 2,
-//       imageSource: "./Characters/2.png"
-//     }
-//   ]
- 
-  // const imagesForTheCharacters = [
-  //   {
-  //     // label: "Magic Warrior",
-  //     id: 1,
-  //     // alt: "Magic Warrior",
-  //     image: require ("./Characters/1_1.png")
-  //   },
-  //   {
-  //     // label: "Karate Girl",
-  //     id: 2,
-  //     // alt: "Karate Girl",
-  //     image: require ("./Characters/2.png")
-  //   }
-  // ]
-// Functions to make the image swap to the next or back
-// let contador = 0;
-// let [imageShowingState, setImageShowingState] = React.useState()
-
-// function nextImage () {
-//   contador++
-//   for (let image of imagesForTheCharacters){
-//     // console.log("Dentro do 'for'");
-//     if (contador === image.id){
-//       console.log("eu sou a imagem do " + contador);
-//       // document.querySelector(".imageCarousel").style.backgroundImage = image.image
-//       setImageShowingState = image.image;
-//     }
-//   }
-// }
-// function backImage(){
-//  contador--
-//   for (let image of imagesForTheCharacters){
-//     if (contador === image.id){
-//       // image.image = 
-//     }
-//   }
-// }
-
-//----------------------
