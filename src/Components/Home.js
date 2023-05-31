@@ -9,9 +9,9 @@ const Home = () => {
         <div className='background'></div>
         {/* Menu */}
         <nav id="navegationBar"> 
-            <NavLink className="menuLink" to="/about"><li id='buttonAbout'>About</li></NavLink> 
-            <NavLink className="menuLink" to="/charactersPage"><li id="buttonCharacters" >Characters</li></NavLink>
-            <NavLink className="menuLink" to="/concepts"><li id="buttonConcepts">Concepts</li></NavLink>
+            <li><NavLink className="menuLink" to="/about">About</NavLink> </li>
+            <li><NavLink className="menuLink" to="/charactersPage">Characters</NavLink></li>
+            <li><NavLink className="menuLink" to="/concepts">Concepts</NavLink></li>
         </nav>
         <img src={menuImage} alt='MenuImage' className='menuImage'></img>
     </>

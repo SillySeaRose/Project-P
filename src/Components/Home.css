@@ -53,54 +53,23 @@
 /* Space between words */
 li{
     list-style-type: none;
-    margin-top: 25%;
-    cursor: url(./Sprites/Mouse/v1mousePointer.png), pointer;
-}
-
-/* Removing the underline from the links */
-.menuLink{
-    text-decoration: none;
-    cursor: url(./Sprites/Mouse/v1mousePointer.png), pointer;
+    margin-top: 4%;
 }
 
 /* Place where buttons are customized and the corresponded hover's */
-#buttonAbout{
-    color: rgb(255, 238, 0);
-    font-family: "pixelFont";
-    text-shadow: 0px -4px rgb(182, 189, 48), 0px -8px rgb(82, 78, 41);
-    text-decoration: none;
-    font-size: 65px;
+.menuLink{
     transition: all ease 0.5s;
-}
-#buttonAbout:hover{
-    color: rgb(228, 63, 63);
-    text-shadow: 0px 4px rgb(212, 169, 101), 0px 8px rgb(226, 205, 17);
-}
-
-#buttonCharacters{
     color: rgb(255, 238, 0);
-    font-family: "pixelFont";
-    text-shadow: 0px -4px rgb(182, 189, 48), 0px -8px rgb(82, 78, 41);
     text-decoration: none;
-    font-size: 65px;
-    transition: all ease 0.5s;
-}
-
-#buttonCharacters:hover{
-    color: rgb(228, 63, 63);
-    text-shadow: 0px 4px rgb(212, 169, 101), 0px 8px rgb(226, 205, 17);
-}
-
-#buttonConcepts{
-    color: rgb(255, 238, 0);
-    font-family: "pixelFont";
     text-shadow: 0px -4px rgb(182, 189, 48), 0px -8px rgb(82, 78, 41);
-    text-decoration: none;
-    font-size: 65px;
-    transition: all ease 0.5s;
+    cursor: url(./Sprites/Mouse/v1mousePointer.png), pointer;
+    font-family: "pixelFont";
+    font-size: 10vh;
 }
 
-#buttonConcepts:hover{
+.menuLink:hover{
     color: rgb(228, 63, 63);
-    text-shadow: 0px 4px rgb(212, 169, 101), 0px 8px rgb(226, 205, 17);
+    text-shadow: 0px 4px rgb(212, 169, 101), 0px 8px rgb(226, 205, 17); 
+    
 }
+
