@@ -137,42 +137,12 @@ text-decoration: none;
     transition: all ease-in 3s;
 }
 
-/* .arrowLeft:hover{
-    animation: arrowLeftAnimation;
-    animation-duration: 0.7s;
-    animation-iteration-count: infinite;
-} */
-
-
-/* .arrowRight:hover{
-    animation: arrowRightAnimation;
-    animation-duration: 0.7s;
-    animation-iteration-count: infinite;
-} */
-
 .picturesContainer{
     width: 40%;
     height: 75%;
-    /* position: absolute;
-    left: 30%;
-    top: 10%; */
     position: absolute;
     top: 13%;
     left: 30.1%;
     z-index: 3;
     box-shadow: 9px 9px rgba(235, 198, 31, 0.759), -9px -9px rgba(235, 198, 31, 0.759), 5px 5px rgba(250, 223, 102, 0.759), -5px -5px rgba(250, 223, 102, 0.759);
 }
-
-
-/* .imageCarousel{
-    border: 2px rgb(234, 11, 11) solid;
-    width: 40%;
-    height: 75%;
-
-    background-size:cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 13%;
-    left: 30.1%;
-    box-shadow: 9px 9px rgba(235, 198, 31, 0.759), -9px -9px rgba(235, 198, 31, 0.759), 5px 5px rgba(250, 223, 102, 0.759), -5px -5px rgba(250, 223, 102, 0.759);
-} */

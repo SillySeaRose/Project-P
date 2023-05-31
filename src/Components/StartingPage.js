@@ -7,8 +7,10 @@ import image from "./Sprites/BackGroundImages/characterHoldingStartButtonAndStar
 const StartingPage = () => {
   //Transition from this page to others
   function fadeOutPage() {
-    // let page = document.querySelector(".StartingPageBackground");
-    // page.style.opacity = "0%";
+    // const buttonAnimation = {
+    //   animation: "clickedButton",
+    //   animationInterationCount: 5,
+    // }
   }
   
   return (

@@ -16,7 +16,6 @@
 /* Place where will be the background and looping animation of the brackground */
 .background{
     background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
-    /* border: 2px red solid; */
     width: 100%;
     height: 200%;
     rotate: 0deg;

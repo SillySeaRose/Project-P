@@ -5,11 +5,10 @@ import './About.css'
 const About = () => {
   return (
     <>
-    <nav>
-      <NavLink to="/home"><li className='backButtonAbout'></li></NavLink>
-      <h1 className='tittlePage'>About</h1>
-    </nav> 
+    <div className='background'></div>
+    <NavLink className="NavLinkDecoration" to="/home"><div className='backHome'>Back</div></NavLink>
     
+    <div className='upBoxEye'></div>
     <div className='textBox'>
       <p className='aboutText'>Hi, im <span className='textMark'>Adriano Moreira</span>, right now with the age of 24.</p>
       <p className='aboutText'>This is my art portefolio, under my artist name,<span className='textMark'> SillySeaRose "SSR"</span>, i made this as a final project for the college <span className='textMark'>"FLAG"</span> in <span className='textMark'>"Especializado em Front-End Development"</span>. Here i used HTML5, CSS, JavaScript and the framework: React to produce this final product.</p>

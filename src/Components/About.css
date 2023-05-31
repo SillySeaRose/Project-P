@@ -1,24 +1,93 @@
-/* Animação do botão de andar para a pagina inicial*/
-@keyframes backButtonAnimation{
+/* Animations*/
+@keyframes eyeAnimation{
     0%{
-        background-image: url(/src/Components/Sprites/BackButton/backButton-0002.png);
+        background-image: url(/src/Components/Sprites/About/upboxeye2.png);
     }
-    35%{
-        background-image: url(/src/Components/Sprites/BackButton/backButton-0003.png);
+    4.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye3.png);
     }
-    70%{
-        background-image: url(/src/Components/Sprites/BackButton/backButton-0004.png);
+    9%{
+        background-image: url(/src/Components/Sprites/About/upboxeye4.png);
+    }
+    13.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye5.png);
+    }
+    18%{
+        background-image: url(/src/Components/Sprites/About/upboxeye6.png);
+    }
+    22.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye7.png);
+    }
+    27%{
+        background-image: url(/src/Components/Sprites/About/upboxeye8.png);
+    }
+    31.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye9.png);
+    }
+    36%{
+        background-image: url(/src/Components/Sprites/About/upboxeye10.png);
+    }
+    40.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye11.png);
+    }
+    45%{
+        background-image: url(/src/Components/Sprites/About/upboxeye12.png);
+    }
+    49.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye13.png);
+    }
+    54%{
+        background-image: url(/src/Components/Sprites/About/upboxeye14.png);
+    }
+    58.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye15.png);
+    }
+    63%{
+        background-image: url(/src/Components/Sprites/About/upboxeye16.png);
+    }
+    67.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye17.png);
+    }
+    72%{
+        background-image: url(/src/Components/Sprites/About/upboxeye18.png);
+    }
+    76.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye19.png);
+    }
+    81%{
+        background-image: url(/src/Components/Sprites/About/upboxeye20.png);
+    }
+    85.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye21.png);
+    }
+    90%{
+        background-image: url(/src/Components/Sprites/About/upboxeye22.png);
+    }
+    94.5%{
+        background-image: url(/src/Components/Sprites/About/upboxeye23.png);
+    }
+    99%{
+        background-image: url(/src/Components/Sprites/About/upboxeye23.png);
     }
     100%{
-        background-image: url(/src/Components/Sprites/BackButton/backButton-0005.png);
+        background-image: url(/src/Components/Sprites/About/upboxeye23.png);
     }
 }
-/* Fonte a ser usada nos textos  */
+
+@keyframes backgroundAnimation {
+    0%{
+        rotate: 90deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+/* TextFont */
 @font-face {
     font-family: pixelFont;
     src: url(/font-family/Mrs_Kichinto_6px.ttf);
 }
-/*barra de navegação lateral */
+/*navegation bar */
 ::-webkit-scrollbar{
     width: 30px;
 }
@@ -35,52 +104,85 @@
 ::-webkit-scrollbar-thumb:hover{
     background-image: url(/src/Components/Sprites/Slider/pointonsliderv1_hover.png);
 }
-/*Elementos de css da pagina "About" */
-nav{
-    /* border: 2px solid black; */
-    display: flex;
-    justify-content: space-between;
+/*-------------*/
+
+/* Place where will be the background and looping animation of the brackground */
+.background{
+    background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
+    width: 100%;
+    height: 200%;
+    rotate: 0deg;
+    position: absolute;
+    top: -50%;
+    left: 0%;
+    animation: backgroundAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all ease-in 3s;
 }
 
-.backButtonAbout{
-    background-image: url(/src/Components/Sprites/BackButton/backButton-0001.png);
+.NavLinkDecoration{
+    text-decoration: none;
+    }
+
+.backHome{
+    width: max-content;
+    font-size: 50px;
+    font-family: pixelFont;
+    color: rgb(216, 216, 42);
+    text-shadow: 0px 2px rgb(200, 164, 63), 0px 4px rgb(127, 103, 37);
+    position: relative;
+    top: 5%;
+    left: 2%;
+    z-index: 2;
+    transition: all ease 0.5s;
+}
+
+.backHome:hover{
+    color: rgb(223, 111, 111);
+    text-shadow: 0px 0px rgb(216, 184, 94), 0px 2px rgb(147, 127, 73);
+}
+
+.upBoxEye{
+    /* border: 2px red solid; */
+    width: 30vw;
+    height: 19vh;
+    position: absolute;
+    top: 8%;
+    left: 33%;
+    background-image: url(./Sprites/About/upboxeye1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 200px;
-    height: 130px;
-    /* border: 2px rgb(192, 20, 20) solid;
-    background-color: blue; */
-}
-.backButtonAbout:hover{
-    animation: backButtonAnimation;
+    animation: eyeAnimation;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-duration: 0.4s;
-}
-
-.tittlePage{
-    margin: 0px;
-    margin-right: 30px;
-    font-weight: bold;
-    font-size: 90px;
+    transition: all ease;
 }
 
 .textBox{
-    border: 2px black solid;
+    border: 2px rgb(100, 104, 34) solid;
     padding: 15px;
     margin: 15px;
-    background-color: rgba(49, 102, 52, 2);
-    /* overflow: scroll; */
+    width: 90vw;
+    height: 60vh;
+    background-image: linear-gradient(rgb(208, 76, 61), rgba(0, 0, 0, 0.581));
     overflow-x: hidden;
-    min-height: 60vh;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.658), 0px 8px rgb(63, 53, 100);
+    position: absolute;
+    top: 25%;
+    left: 3%;
 }
+
 .textMark{
-    color: lightblue;
+    color: rgb(255, 255, 255);
 }
+
 .aboutText{
     font-family: "pixelFont";
-    text-shadow:2px 2px rgb(93, 93, 141);
-    color: lightpink;
+    text-shadow:1px 2px rgba(93, 141, 95, 0.509);
+    color: rgb(93, 188, 64);
     text-indent: 10px;
     letter-spacing: 3px;
     line-height: 1.6;
