@@ -146,6 +146,7 @@
     left: 43.2%;
     z-index: 2;
     transition: all ease 0.5s;
+    cursor: url(./Sprites/Mouse/v1mousePointer.png), pointer;
 }
 
 .startWebSite:hover{

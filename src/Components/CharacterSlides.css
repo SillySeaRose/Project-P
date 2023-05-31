@@ -1,3 +1,12 @@
+@keyframes arrowAnimation{
+    0%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 70%;
+    }
+}
+
 .boxHeight {
     height: 100%;
     position: relative;    
@@ -14,7 +23,14 @@
     top: 32vh;
     left: 50.5vw;
     z-index: 2;
-    cursor: pointer;
+    cursor: url(./Sprites/Mouse/v1mousePointer.png), pointer;
+}
+
+.arrowRight:hover{
+    animation: arrowAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
 }
 
 .arrowLeft{
@@ -28,5 +44,12 @@
     top: 32vh;
     left: -25vw;
     z-index: 2;
-    cursor: pointer;
+    cursor: url(./Sprites/Mouse/v1mousePointer.png), pointer;
+}
+
+.arrowLeft:hover{
+    animation: arrowAnimation;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
 }

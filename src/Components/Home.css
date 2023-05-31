@@ -54,11 +54,13 @@
 li{
     list-style-type: none;
     margin-top: 25%;
+    cursor: url(./Sprites/Mouse/v1mousePointer.png), pointer;
 }
 
 /* Removing the underline from the links */
 .menuLink{
     text-decoration: none;
+    cursor: url(./Sprites/Mouse/v1mousePointer.png), pointer;
 }
 
 /* Place where buttons are customized and the corresponded hover's */
