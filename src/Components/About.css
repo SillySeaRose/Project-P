@@ -147,15 +147,15 @@
 
 .upBoxEye{
     /* border: 2px red solid; */
-    width: 30vw;
-    height: 19vh;
+    width: 30%;
+    height: 19%;
     position: absolute;
-    top: 8%;
+    top: 8.5%;
     left: 33%;
     background-image: url(./Sprites/About/upboxeye1.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position:bottom;
     animation: eyeAnimation;
     animation-duration: 3s;
     animation-iteration-count: infinite;
