@@ -44,22 +44,25 @@ const Character = () => {
 
             const {mouseX, mouseY, destinationX,destinationY, distanceX,distanceY} = positionRef.current;
 
+            // to position the character in the same position as the cursor
             if(!destinationX | !destinationY){
                 positionRef.current.destinationX = mouseX;
                 positionRef.current.destinationY = mouseY;
             } else {
+                // to create delay in action of the character
                 positionRef.current.distanceX = (mouseX - destinationX) * 0.07;
                 positionRef.current.distanceY = (mouseY - destinationY) * 0.07;
 
+                //condicion to make the character move or (else) make the character in the same position as the cursor
                 if (Math.abs(positionRef.current.distanceX) + Math.abs(positionRef.current.distanceY) < 0.1){
                     positionRef.current.destinationX = mouseX;
                     positionRef.current.destinationY = mouseY;
                 } else {
+                    //takes the destination of the cursor and add's the distance needed to get there
                     positionRef.current.destinationX += distanceX;
                     positionRef.current.destinationY += distanceY;
                 }
             }
-
             secondaryCursor.current.style.transform=`translate3d(${destinationX}px , ${destinationY}px, 0)`
 
         };
@@ -70,6 +73,7 @@ const Character = () => {
 
     return (
         <>
+            {/* main cursor = charater in the back with low opacity / secondary cursor = yellow aura around the character */}
             <div className='main-cursor' ref={mainCursor}></div>
             <div className='secondary-cursor' ref={secondaryCursor}></div>
         </>

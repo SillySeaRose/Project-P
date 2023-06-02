@@ -6,6 +6,9 @@ import menuImage from "./Sprites/BackGroundImages/menu/MenuImage.png"
 const Home = () => {
   return (
     <>
+        <div className='homeOverlay'></div>
+
+
         <div className='background'></div>
         {/* Menu */}
         <nav id="navegationBar"> 

@@ -1,7 +1,6 @@
 .main-cursor{
     width: 60px;
     height: 60px;
-    /* background-color: red; */
     background-image: url(./Sprites/Mouse/v1mousedefault.png);
     background-repeat: no-repeat;
     background-position: center;
