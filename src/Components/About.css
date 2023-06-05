@@ -1,3 +1,72 @@
+/* About overlay Section*/
+@keyframes AboutOverlayAnimation{
+    0%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition1.png);
+        top: 1%;
+        background-size: cover;
+    }
+    6.6%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition2.png);
+        background-size: cover;
+    }
+    13.2%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition3.png);
+        background-size: cover;
+    }
+    19.8%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition4.png);
+        background-size: cover;
+    }
+    26.4%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition5.png);
+        background-size: cover;
+    }
+    33%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition6.png);
+        background-size: cover;
+    }
+    39.6%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition7.png);
+        background-size: cover;
+    }
+    46.2%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition8.png);
+        background-size: cover;
+    }
+    52.8%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition9.png);
+        background-size: cover;
+    }
+    59.4%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition10.png);
+        background-size: cover;
+    }
+    92.4%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition10.png);
+        background-size: cover;
+        top: 1%;
+    }
+    99%{
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/v2reverse/websiteTransition10.png);
+        top: 100%;
+    }
+
+}
+
+.AboutOverlay{
+    /* background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition2.png); */
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    animation:AboutOverlayAnimation;
+    animation-duration: 1s;
+}
+
+
 /* Animations*/
 @keyframes eyeAnimation{
     0%{

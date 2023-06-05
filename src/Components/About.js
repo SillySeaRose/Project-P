@@ -5,6 +5,8 @@ import './About.css'
 const About = () => {
   return (
     <>
+    <div className='AboutOverlay'></div>
+
     <div className='background'></div>
     <NavLink className="NavLinkDecoration" to="/home"><div className='backHome'>Back</div></NavLink>
     

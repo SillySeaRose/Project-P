@@ -19,7 +19,7 @@ const Character = () => {
     })
     React.useEffect(() => {
         document.addEventListener("mousemove", (event) => {
-            // cordinates
+            // coordinates
             const {clientX, clientY} = event;
             
             const mouseX = clientX;

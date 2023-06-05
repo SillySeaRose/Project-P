@@ -1,73 +1,53 @@
 /* Home overlay Section*/
 @keyframes homeOverlayAnimation{
     0%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition1.png);
-        top: 0%;
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition1.png);
+        top: 1%;
         background-size: cover;
     }
     6.6%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition2.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition2.png);
         background-size: cover;
     }
     13.2%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition3.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition3.png);
         background-size: cover;
     }
     19.8%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition4.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition4.png);
         background-size: cover;
     }
     26.4%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition5.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition5.png);
         background-size: cover;
     }
     33%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition6.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition6.png);
         background-size: cover;
     }
     39.6%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition7.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition7.png);
         background-size: cover;
     }
     46.2%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition8.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition8.png);
         background-size: cover;
     }
     52.8%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition9.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition9.png);
         background-size: cover;
     }
     59.4%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition10.png);
-        background-size: cover;
-    }
-    66%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition11.png);
-        background-size: cover;
-    }
-    72.6%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition12.png);
-        background-size: cover;
-    }
-    79.2%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition13.png);
-        background-size: cover;
-    }
-    85.8%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition14.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition10.png);
         background-size: cover;
     }
     92.4%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition15.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition10.png);
         background-size: cover;
-        top: 0%;
-    }
-    93%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition15.png);
-        
+        top: 1%;
     }
     99%{
-        background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition15.png);
+        background-image: url(./Sprites/WebsiteTransitionAnimation/v2/websiteTransition10.png);
         top: 100%;
     }
 
@@ -75,11 +55,12 @@
 
 .homeOverlay{
     /* background-image: url(./Sprites/WebsiteTransitionAnimation/websiteTransition2.png); */
+    background-repeat: no-repeat;
     position: absolute;
     top: 100%;
     left: 0%;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 2;
     animation:homeOverlayAnimation;
     animation-duration: 1s;
@@ -121,9 +102,9 @@
 .menuImage{
     /* border: 2px red solid; */
     width: 92%;
-    height: 87%;
+    height: 89%;
     position: absolute;
-    top: 7%;
+    top: 6%;
     left: 4%;
     z-index: 0;
 }

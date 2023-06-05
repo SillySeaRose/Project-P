@@ -3,6 +3,7 @@ import "./CharacterSlides.css"
 
 //We take give a prop called "slides" wich is going to read the array of objects "slides"
 const CharacterSlides = ({slides}) => {
+    
     //Here we will check in wich slide we are in, updating it with the useState Hook  
     const [currentIndex, setCurrentIndex] = React.useState(0);
   
