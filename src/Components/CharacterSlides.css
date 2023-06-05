@@ -54,6 +54,28 @@
     animation-direction: alternate;
 }
 
+/*Responsive*/
+
+@media only screen and (max-width: 1210px){
+    .arrowLeft{
+        width: 14vw;
+        height: 12vh;
+        position: absolute;
+        top: 31vh;
+        left: -25vw;
+        background-size: contain;
+    }
+    .arrowRight{
+        width: 14vw;
+        height: 12vh;
+        position: absolute;
+        top: 31vh;
+        left: 50.5vw;
+        background-size: contain;
+    }
+}
+
+
 @media only screen and (max-width: 700px) {
     .arrowLeft{
         width: 27vw;

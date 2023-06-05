@@ -178,3 +178,27 @@ li{
         /* border: 2px solid rgb(255, 3, 3); */
     }
 }
+
+@media only screen and (max-width: 400px) {
+    #navegationBar{
+        top: 20%;
+    }
+    
+    .menuLink{
+        font-size: 5vh;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    li{
+        margin-top: 50%;
+    }
+    
+    #navegationBar{
+        top: 15%;
+    }
+    
+    .menuLink{
+        font-size: 5vh;
+    }
+}

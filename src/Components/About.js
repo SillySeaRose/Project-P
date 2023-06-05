@@ -7,6 +7,11 @@ const About = () => {
     <>
     <div className='AboutOverlay'></div>
 
+    <div className='FastTravelMenu'>
+      <NavLink className="NavLinkDecoration" to="/charactersPage"><p className='FastTravelMenuLinks'>Characters</p></NavLink>
+      <NavLink className="NavLinkDecoration" to="/concepts"><p className='FastTravelMenuLinks'>Concepts</p></NavLink>
+    </div>
+
     <div className='Aboutbackground'></div>
     <NavLink className="NavLinkDecoration" to="/home"><div className='backHome'>Back</div></NavLink>
     
