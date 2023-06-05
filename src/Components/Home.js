@@ -9,7 +9,7 @@ const Home = () => {
         <div className='homeOverlay'></div>
 
 
-        <div className='background'></div>
+        <div className='backgroundHome'></div>
         {/* Menu */}
         <nav id="navegationBar"> 
             <li><NavLink className="menuLink" to="/about">About</NavLink> </li>

@@ -53,3 +53,41 @@
     animation-duration: 1s;
     animation-direction: alternate;
 }
+
+@media only screen and (max-width: 700px) {
+    .arrowLeft{
+        width: 27vw;
+        height: 12vh;
+        position: absolute;
+        top: 65vh;
+        left: -10vw;
+        background-size: contain;
+    }
+    .arrowRight{
+        width: 27vw;
+        height: 12vh;
+        position: absolute;
+        top: 65vh;
+        left: 29vw;
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .arrowLeft{
+        width: 32vw;
+        height: 12vh;
+        position: absolute;
+        top: 48vh;
+        left: -5vw;
+        background-size: contain;
+    }
+    .arrowRight{
+        width: 32vw;
+        height: 12vh;
+        position: absolute;
+        top: 48vh;
+        left: 32vw;
+        background-size: contain;
+    }
+}

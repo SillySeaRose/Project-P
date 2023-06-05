@@ -117,7 +117,7 @@
     }
 }
 
-@keyframes backgroundAnimation {
+@keyframes CharacterAndConceptsbackgroundAnimation {
     0%{
         rotate: 90deg;
     }
@@ -130,17 +130,6 @@
 @font-face {
     font-family: pixelFont;
     src: url(/font-family/Mrs_Kichinto_6px.ttf);
-}
-
-.conceptPageTitle{
-    position: absolute;
-    top: 15%;
-    left: 42%;
-}
-.characterPageTitle{
-    position: absolute;
-    top: 15%;
-    left: 42%;
 }
 
 .NavLinkDecoration{
@@ -166,14 +155,6 @@ text-decoration: none;
     text-shadow: 0px 0px rgb(216, 184, 94), 0px 2px rgb(147, 127, 73);
 }
 
-.handsImage{
-    width: 100%;
-    height: 93.2%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
 .LightFrame{
     width: 40%;
     height: 75.1%;
@@ -183,7 +164,6 @@ text-decoration: none;
     z-index: 2;
 }
 .pageImage{
-    border: 2px solid red;
     width: 100%;
     height: 90%;
     position: absolute;
@@ -191,7 +171,7 @@ text-decoration: none;
     left: 0%;
 }
 /* Place where will be the background and looping animation of the brackground */
-.background{
+.CharacterAndConceptsbackground{
     background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
     /* border: 2px red solid; */
     width: 100%;
@@ -200,7 +180,7 @@ text-decoration: none;
     position: absolute;
     top: -50%;
     left: 0%;
-    animation: backgroundAnimation;
+    animation: CharacterAndConceptsbackgroundAnimation;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -214,5 +194,48 @@ text-decoration: none;
     top: 13%;
     left: 30.1%;
     z-index: 3;
-    box-shadow: 9px 9px rgba(235, 198, 31, 0.759), -9px -9px rgba(235, 198, 31, 0.759), 5px 5px rgba(250, 223, 102, 0.759), -5px -5px rgba(250, 223, 102, 0.759);
+    box-shadow: 4px 4px rgba(235, 198, 31, 0.759), -4px -4px rgba(235, 198, 31, 0.759), 2px 2px rgba(250, 223, 102, 0.759), -2px -2px rgba(250, 223, 102, 0.759);
+}
+
+
+@media only screen and (max-width: 700px) {
+    .CharacterAndConceptsbackground{
+        animation: none;
+    }
+
+    .pageImage{
+        width: 130%;
+        height: 60%;
+        position: absolute;
+        top: 20%;
+        left: -15%;
+    }
+    .picturesContainer{
+        width: 48%;
+        height: 75%;
+        position: absolute;
+        top: 12.8%;
+        left: 26%;
+        z-index: 3;
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .pageImage{
+        width: 150%;
+        height: 50%;
+        position: absolute;
+        top: 25%;
+        left: -25%;
+    }
+    .picturesContainer{
+        width: 59.9%;
+        height: 43%;
+        position: absolute;
+        top: 28.7%;
+        left: 20%;
+        z-index: 3;
+        box-shadow: none;
+    }
 }

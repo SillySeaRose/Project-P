@@ -73,7 +73,7 @@
     src: url(/font-family/Mrs_Kichinto_6px.ttf);
 }
 
-@keyframes backgroundAnimation {
+@keyframes backgroundHomeAnimation {
     0%{
         rotate: 90deg;
     }
@@ -83,7 +83,7 @@
 }
 
 /* Place where will be the background and looping animation of the brackground */
-.background{
+.backgroundHome{
     background-image: url(/src/Components/Sprites/BackGroundImages/starsbackgroundmoving.png);
     width: 100%;
     height: 200%;
@@ -91,11 +91,11 @@
     position: absolute;
     top: -50%;
     left: 0%;
-    animation: backgroundAnimation;
+    animation: backgroundHomeAnimation;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    transition: all ease-in 3s;
+    /* transition: all ease-in 3s; */
 }
 
 /* Image with the red character.The big eye shooting light*/
@@ -142,3 +142,39 @@ li{
     
 }
 
+/* Responsive */
+
+@media only screen and (max-width: 700px) {
+    .menuImage{
+        display: none;
+    }
+
+    li{
+        margin-top: 17%;
+    }
+    .backgroundHome{
+        background-size:auto;
+        width: 100%;
+        height: 200%;
+        animation: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .menuImage{
+        display: none;
+    }
+
+    li{
+        margin-top: 26%;
+    }
+    .backgroundHome{
+        background-size:auto;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        animation: none;
+        rotate: 0deg;
+        /* border: 2px solid rgb(255, 3, 3); */
+    }
+}

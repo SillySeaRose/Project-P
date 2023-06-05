@@ -11,7 +11,7 @@ const CharactersAndConcepts = () => {
 
       <div className='CharacterAndConceptsOverlay'></div>
       {/* Layout of Concepts and Characters page's */}
-      <div className='background'></div>
+      <div className='CharacterAndConceptsbackground'></div>
       <NavLink className="NavLinkDecoration" to="/home"><div className='backButtonCharactersAndConcepts'>Back</div></NavLink>
 
       {/* Menu to move "CharacterAndConceptsSlides" */}
