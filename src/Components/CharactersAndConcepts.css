@@ -268,20 +268,17 @@ text-decoration: none;
         z-index: 3;
         box-shadow: none
     }
+
     .FastTravelMenuCC{
         display: flex;
         flex-direction: row;
-        position: absolute;
         top: 10%;
         left: 31%;
     }
 
     .FastTravelMenuLinksCC{
         width: max-content;
-        font-size: 20px;
         margin-right: 50px;
-        position: relative;
-        z-index: 2;
     }
 }
 
@@ -326,5 +323,18 @@ text-decoration: none;
         left: 20%;
         z-index: 3;
         box-shadow: none;
+    }
+
+    .FastTravelMenuCC{
+        display: flex;
+        flex-direction: row;
+        top: 22%;
+        left: 20%;
+    }
+
+    .FastTravelMenuLinksCC{
+        width: max-content;
+        margin-right: 40px;
+        font-size: 17px;
     }
 }
