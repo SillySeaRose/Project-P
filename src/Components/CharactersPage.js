@@ -1,6 +1,8 @@
 import React from 'react'
 import CharactersAndConcepts from './CharactersAndConcepts'
 import CharacterAndConceptsSlides from "./CharacterAndConceptsSlides"
+import { NavLink } from 'react-router-dom'
+
 // Images imports: 
 import CharacterPng1 from "./Characters/resized/1.png"
 import CharacterPng2 from "./Characters/resized/2.png"
@@ -106,7 +108,12 @@ const CharactersPage = () => {
   
   return (
     <>
-        <div className='currentPageCharacterPage'></div>
+         <div className='FastTravelMenuCC'>
+          <NavLink className="NavLinkDecoration" to="/about"><p className='FastTravelMenuLinksCC'>About</p></NavLink>
+          <NavLink className="NavLinkDecoration" to="/concepts"><p className='FastTravelMenuLinksCC'>Concepts</p></NavLink>
+          <NavLink className="NavLinkDecoration" to="/charactersPage"><p className='FastTravelMenuLinksCC current'>Characters</p></NavLink>
+        </div>
+
         <div className='picturesContainer'>
           <CharacterAndConceptsSlides slides={characterSlides}/>
         </div>
