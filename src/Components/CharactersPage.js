@@ -106,6 +106,7 @@ const CharactersPage = () => {
   
   return (
     <>
+        <div className='currentPageCharacterPage'></div>
         <div className='picturesContainer'>
           <CharacterAndConceptsSlides slides={characterSlides}/>
         </div>

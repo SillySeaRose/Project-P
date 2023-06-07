@@ -8,8 +8,8 @@ const CharactersAndConcepts = () => {
   
   return (
     <>
-      <div className='FastTravelMenu'>
-      <NavLink className="NavLinkDecoration" to="/about"><p className='FastTravelMenuLinksCC'>Home</p></NavLink>
+      <div className='FastTravelMenuCC'>
+      <NavLink className="NavLinkDecoration" to="/about"><p className='FastTravelMenuLinksCC'>About</p></NavLink>
       <NavLink className="NavLinkDecoration" to="/concepts"><p className='FastTravelMenuLinksCC'>Concepts</p></NavLink>
       <NavLink className="NavLinkDecoration" to="/charactersPage"><p className='FastTravelMenuLinksCC'>Characters</p></NavLink>
       </div>

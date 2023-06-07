@@ -134,6 +134,7 @@ const Concepts = () => {
   
   return (
     <>
+      <div className='currentPageConcepts'></div>
       <div className='picturesContainer'>
           <CharacterAndConceptsSlides slides={conceptsSlides}/>
       </div>
