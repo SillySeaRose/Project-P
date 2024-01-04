@@ -16,7 +16,7 @@
 .arrowRight{
     background-image: url(/src/Components/Sprites/BackGroundImages/ConceptCharacterPage/ArrowRightV2.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 14vw;
     height: 12vh;
     position: absolute;
@@ -37,7 +37,7 @@
     /* border: 2px red solid; */
     background-image: url(/src/Components/Sprites/BackGroundImages/ConceptCharacterPage/ArrowLeftV2.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 14vw;
     height: 12vh;
     position: absolute;

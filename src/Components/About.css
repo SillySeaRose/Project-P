@@ -261,6 +261,7 @@
     text-indent: 10px;
     letter-spacing: 3px;
     line-height: 1.6;
+    font-size: 18px;
 }
 /* FastTravelMenu */
 
@@ -271,7 +272,7 @@
     color: rgb(255, 255, 255);
     text-shadow: 0px 2px rgb(200, 164, 63), 0px 4px rgb(127, 103, 37);
     float: right;
-    margin-top: 8%;
+    margin-top: 9%;
     margin-right: 10px;
     position:relative;
     z-index: 2;
