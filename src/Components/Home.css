@@ -102,9 +102,9 @@
 .menuImage{
     /* border: 2px red solid; */
     width: 92%;
-    height: 89%;
+    height: 90%;
     position: absolute;
-    top: 6%;
+    top: 5%;
     left: 4%;
     z-index: 0;
 }
@@ -166,7 +166,7 @@ li{
     }
 
     li{
-        margin-top: 26%;
+        margin-top: 33%;
     }
     .backgroundHome{
         background-size:auto;
@@ -176,6 +176,9 @@ li{
         animation: none;
         rotate: 0deg;
         /* border: 2px solid rgb(255, 3, 3); */
+    }
+    .menuLink{
+        font-size: 8vh;
     }
 }
 
